@@ -1,63 +1,36 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: 0px;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
-}
-
-.bold{
-    font-variant: initial;
 }
 
 /* MAIN CSS */
 
-section{
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.ArticuloUno{
-    grid-area: articulo1;
-    width: 97%;
-}
-
-.ArticuloDos{
-    grid-area: articulo2;
-    width: 97%;
-}
-
-.ArticuloTres{
-    grid-area: articulo3;
-    width: 97%;
-}
-
 main{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-image: linear-gradient(lightblue, white, lightblue);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     width: 100%;
-}
-
-.mainInicio{
-    background-image: linear-gradient(lightblue, white, lightblue);
-    width: 100%;   
-    display: grid;
-    grid-template-columns: 75% 20%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "articulo1 aside"
-                        "articulo2 aside"
-                        "articulo3 aside"; 
 }
 
 .mainFotos{
-    background-image: linear-gradient(lightblue, white, lightblue);
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     width: 100%;
 }
 
 .mainVideos{
-    background-image: linear-gradient(lightblue, white, lightblue);
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     width: 100%;
 }
 
@@ -108,13 +81,6 @@ aside{
 
 /* SECTION */
 
-main section article{
-    width: 100%;
-    font-size: 30px;
-    font-weight: normal;
-    background-image: linear-gradient(lightblue, white, lightblue);
-}
-
 h1{
     color: red;
 }
@@ -123,9 +89,18 @@ h1{
 
 .videos{
     width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 29% 1% 29% 1% 29%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "video1 . video2 . video3"
+                         "video4 . video5 . video6";
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(lightblue, white, lightblue);
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .videoUno{
@@ -164,27 +139,9 @@ h1{
     height: 80%;
 }
 
-.contenedorVideos{
-    display: grid;
-    grid-template-columns: 29% 1% 29% 1% 29%;
-    grid-template-rows: auto auto;
-    grid-template-areas: "video1 . video2 . video3"
-                         "video4 . video5 . video6";
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-image: linear-gradient(lightblue, white, lightblue);
-}
-
 div iframe{
     border-radius: 2em;
     transform: scale(1, 1);
-    transition: all 1s;
-}
-
-div iframe:hover{
-    transform: scale(1.1, 1.1);
     transition: all 1s;
 }
 
@@ -216,7 +173,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100px;
+    margin-bottom: -16px;
 }
 
 body header p{
@@ -425,7 +382,6 @@ div iframe{
     /*gap: 20px;*/
     margin-left: 10px;
     margin-right: 10px;
-    background-image: linear-gradient(lightblue, white, lightblue);
 }
 
 div img{
@@ -434,7 +390,7 @@ div img{
     border-radius: 1em;
 }
 
-div img:hover{
+.fotos img:hover{
     transform: scale(1.1, 1.1);
     transition: all 1s;
 }
@@ -454,14 +410,6 @@ th {
     font-style: normal;
 }
 
-section article {
-    border: 3px solid whitesmoke;
-    border-radius: 1em;
-    text-align: left;
-    font-style: normal;
-    height: 140px;
-}
-
 /* MENU */
 
 .menu{
@@ -475,7 +423,6 @@ section article {
     justify-items: center;
     align-content: center;
     justify-content: center;
-    background-image: linear-gradient(lightblue, white, lightblue);
 }
 
 nav ul li a{
@@ -548,11 +495,7 @@ nav ul li{
         font-size: 12px;
         text-shadow: 2px 2px 2px black;    
     }
-    
-    main section article{
-        font-size: 12px;
-    }
-     
+         
     div table{
         font-size: 10px;
         margin: 10px;
@@ -593,18 +536,25 @@ nav ul li{
         font-size: 15px;
         width: 100%;
     }
-
-    .contenedorVideos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
     
     .videos{
-        width: 70%;
-        margin-left: 0px;
-        margin-right: 0px;
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 70%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "video1"
+                             "video2"
+                             "video3"
+                             "video4"
+                             "video5"
+                             "video6";
+        align-items: center;
+        justify-items: center;
+        background-image: linear-gradient(lightblue, white, lightblue);
     }
 
     fieldset label{
@@ -622,19 +572,7 @@ nav ul li{
         font-size: 15px;
         margin: 5px;
     }
-    
-    section article {
-        border: 3px solid whitesmoke;
-        border-radius: 1em;
-        height: 70px;
-    }    
-
-    section{
-        width: 100%;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-    
+        
     form textarea{
         font-size: 15px;
         margin: 5px;
@@ -656,7 +594,8 @@ nav ul li{
     }
 
     header{  
-        height: 35px;
+        height: 45px;
+        margin-bottom: 0px;
     }
 
     .videoUno{
@@ -693,25 +632,6 @@ nav ul li{
         grid-area: video6;
         width: 100%;
         height: 150px;
-    }
-
-    .mainInicio{
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;   
-        display: grid;
-        grid-template-columns: 87.5%;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "articulo1"
-                            "articulo2"
-                            "articulo3"
-                            "aside"; 
-         align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
     }
 
     .ArticuloUno{
@@ -825,7 +745,6 @@ nav ul li{
                              "foto9 foto10";
         margin-left: 5px;
         margin-right: 5px;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
  
     .tablas{
@@ -877,10 +796,6 @@ nav ul li{
         text-shadow: 2px 2px 2px black;    
     }
     
-    main section article{
-        font-size: 12px;
-    }
-    
     div table{
         font-size: 12px;
         margin: 0px;
@@ -914,8 +829,13 @@ nav ul li{
         justify-content: center;
         font-size: 15px;
     }
-
-    .contenedorVideos{
+    
+    .videos{
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        justify-content: center;
         display: grid;
         grid-template-columns: 29% 1% 29% 1% 29%;
         grid-template-rows: auto auto;
@@ -923,14 +843,7 @@ nav ul li{
                              "video4 . video5 . video6";
         align-items: center;
         justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    .videos{
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+        background-image: linear-gradient(lightblue, white, lightblue);
     }
 
     fieldset label{
@@ -948,19 +861,7 @@ nav ul li{
         font-size: 15px;
         margin: 5px;
     }
-    
-    section article {
-        border: 3px solid whitesmoke;
-        border-radius: 1em;
-        height: 70px;
-    }    
-
-    section{
-        width: 100%;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-    
+        
     form textarea{
         font-size: 15px;
         margin: 5px;
@@ -973,6 +874,7 @@ nav ul li{
 
     header{  
         height: 35px;
+        margin-bottom: 0px;
     }
 
     .videoUno{
@@ -1085,7 +987,6 @@ nav ul li{
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
 }
 
@@ -1098,55 +999,14 @@ nav ul li{
         padding: 0px;
         font-family: Ubuntu, Arial, Helvetica, sans-serif;
     }
-
-    section{
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .ArticuloUno{
-        grid-area: articulo1;
-        width: 97%;
-    }
-    
-    .ArticuloDos{
-        grid-area: articulo2;
-        width: 97%;
-    }
-    
-    .ArticuloTres{
-        grid-area: articulo3;
-        width: 97%;
-    }
-    
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;
-    }
-    
-    .mainInicio{
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;   
-        display: grid;
-        grid-template-columns: 75% 20%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "articulo1 aside"
-                            "articulo2 aside"
-                            "articulo3 aside"; 
-    }
-    
+        
     .mainFotos{
-        background-image: linear-gradient(lightblue, white, lightblue);
         width: 100%;
     }
     
     .mainVideos{
         background-image: linear-gradient(lightblue, white, lightblue);
+        justify-content: center;
         width: 100%;
     }
     
@@ -1197,13 +1057,6 @@ nav ul li{
     
     /* SECTION */
     
-    main section article{
-        width: 100%;
-        font-size: 20px;
-        font-weight: normal;
-        background-image: linear-gradient(lightblue, white, lightblue);
-    }
-    
     h1{
         color: red;
     }
@@ -1212,9 +1065,18 @@ nav ul li{
     
     .videos{
         width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 29% 1% 29% 1% 29%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "video1 . video2 . video3"
+                             "video4 . video5 . video6";
+        align-items: center;
+        justify-content: center;
         background-image: linear-gradient(lightblue, white, lightblue);
-        margin-left: 0px;
-        margin-right: 0px;
     }
     
     .videoUno{
@@ -1253,26 +1115,9 @@ nav ul li{
         height: 300px;
     }
     
-    .contenedorVideos{
-        display: grid;
-        grid-template-columns: 29% 1% 29% 1% 29%;
-        grid-template-rows: auto auto;
-        grid-template-areas: "video1 . video2 . video3"
-                             "video4 . video5 . video6";
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
     div iframe{
         border-radius: 2em;
         transform: scale(1, 1);
-        transition: all 1s;
-    }
-    
-    div iframe:hover{
-        transform: scale(1.1, 1.1);
         transition: all 1s;
     }
     
@@ -1299,12 +1144,8 @@ nav ul li{
     /* HEADER */
     
     header{
-        background-color: black;
-        background-image: url("../img/perritos1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         height: 100%;
+        margin-bottom: 0px;
     }
     
     body header p{
@@ -1510,7 +1351,6 @@ nav ul li{
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
 
     div img{
@@ -1518,8 +1358,8 @@ nav ul li{
         transition: all 1s;
         border-radius: 1em;
     }
-    
-    div img:hover{
+
+    .fotos img:hover{
         transform: scale(1.1, 1.1);
         transition: all 1s;
     }
@@ -1538,16 +1378,7 @@ nav ul li{
         text-shadow: 4px 4px 4px white;    
         font-style: normal;
     }
-    
-    section article {
-        border: 3px solid whitesmoke;
-        border-radius: 1em;
-        text-align: left;
-        font-style: normal;
-        height: 140px;
-    }
-    
-    
+        
     /* MENU */
     
     .menu{
@@ -1561,7 +1392,6 @@ nav ul li{
         justify-items: center;
         align-content: center;
         justify-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
     
     nav ul li a{
@@ -1630,55 +1460,14 @@ nav ul li{
         padding: 0px;
         font-family: Ubuntu, Arial, Helvetica, sans-serif;
     }
-
-    section{
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .ArticuloUno{
-        grid-area: articulo1;
-        width: 97%;
-    }
-    
-    .ArticuloDos{
-        grid-area: articulo2;
-        width: 97%;
-    }
-    
-    .ArticuloTres{
-        grid-area: articulo3;
-        width: 97%;
-    }
-    
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;
-    }
-    
-    .mainInicio{
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;   
-        display: grid;
-        grid-template-columns: 75% 20%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "articulo1 aside"
-                            "articulo2 aside"
-                            "articulo3 aside"; 
-    }
-    
+        
     .mainFotos{
-        background-image: linear-gradient(lightblue, white, lightblue);
         width: 100%;
     }
     
     .mainVideos{
         background-image: linear-gradient(lightblue, white, lightblue);
+        justify-content: center;
         width: 100%;
     }
     
@@ -1729,13 +1518,6 @@ nav ul li{
     
     /* SECTION */
     
-    main section article{
-        width: 100%;
-        font-size: 22px;
-        font-weight: normal;
-        background-image: linear-gradient(lightblue, white, lightblue);
-    }
-    
     h1{
         color: red;
     }
@@ -1744,9 +1526,18 @@ nav ul li{
     
     .videos{
         width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 29% 1% 29% 1% 29%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "video1 . video2 . video3"
+                             "video4 . video5 . video6";
+        align-items: center;
+        justify-content: center;
         background-image: linear-gradient(lightblue, white, lightblue);
-        margin-left: 0px;
-        margin-right: 0px;
     }
     
     .videoUno{
@@ -1785,29 +1576,12 @@ nav ul li{
         height: 300px;
     }
     
-    .contenedorVideos{
-        display: grid;
-        grid-template-columns: 29% 1% 29% 1% 29%;
-        grid-template-rows: auto auto;
-        grid-template-areas: "video1 . video2 . video3"
-                             "video4 . video5 . video6";
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
     div iframe{
         border-radius: 2em;
         transform: scale(1, 1);
         transition: all 1s;
     }
-    
-    div iframe:hover{
-        transform: scale(1.1, 1.1);
-        transition: all 1s;
-    }
-    
+   
     /* REFUGIOS */
     
     .tablas{
@@ -1831,12 +1605,8 @@ nav ul li{
     /* HEADER */
     
     header{
-        background-color: black;
-        background-image: url("../img/perritos1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
-        height: 100%;
+       height: 100%;
+       margin-bottom: 0px;
     }
        
     body header p{
@@ -2043,7 +1813,6 @@ nav ul li{
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
 
     div img{
@@ -2052,7 +1821,7 @@ nav ul li{
         border-radius: 1em;
     }
     
-    div img:hover{
+    .fotos img:hover{
         transform: scale(1.1, 1.1);
         transition: all 1s;
     }
@@ -2071,15 +1840,7 @@ nav ul li{
         text-shadow: 4px 4px 4px white;    
         font-style: normal;
     }
-    
-    section article {
-        border: 3px solid whitesmoke;
-        border-radius: 1em;
-        text-align: left;
-        font-style: normal;
-        height: 140px;
-    }
-        
+            
     /* MENU */
     
     .menu{
@@ -2093,7 +1854,6 @@ nav ul li{
         justify-items: center;
         align-content: center;
         justify-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
     
     nav ul li a{
@@ -2162,55 +1922,14 @@ nav ul li{
         padding: 0px;
         font-family: Ubuntu, Arial, Helvetica, sans-serif;
     }
-
-    section{
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .ArticuloUno{
-        grid-area: articulo1;
-        width: 97%;
-    }
-    
-    .ArticuloDos{
-        grid-area: articulo2;
-        width: 97%;
-    }
-    
-    .ArticuloTres{
-        grid-area: articulo3;
-        width: 97%;
-    }
-    
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;
-    }
-    
-    .mainInicio{
-        background-image: linear-gradient(lightblue, white, lightblue);
-        width: 100%;   
-        display: grid;
-        grid-template-columns: 75% 20%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "articulo1 aside"
-                            "articulo2 aside"
-                            "articulo3 aside"; 
-    }
-    
+            
     .mainFotos{
-        background-image: linear-gradient(lightblue, white, lightblue);
         width: 100%;
     }
     
     .mainVideos{
         background-image: linear-gradient(lightblue, white, lightblue);
+        justify-content: center;
         width: 100%;
     }
     
@@ -2260,13 +1979,6 @@ nav ul li{
     }
     
     /* SECTION */
-
-    main section article{
-        width: 100%;
-        font-size: 30px;
-        font-weight: normal;
-        background-image: linear-gradient(lightblue, white, lightblue);
-    }
     
     h1{
         color: red;
@@ -2276,9 +1988,18 @@ nav ul li{
     
     .videos{
         width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 29% 1% 29% 1% 29%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "video1 . video2 . video3"
+                             "video4 . video5 . video6";
+        align-items: center;
+        justify-content: center;
         background-image: linear-gradient(lightblue, white, lightblue);
-        margin-left: 0px;
-        margin-right: 0px;
     }
     
     .videoUno{
@@ -2317,26 +2038,9 @@ nav ul li{
         height: 300px;
     }
     
-    .contenedorVideos{
-        display: grid;
-        grid-template-columns: 29% 1% 29% 1% 29%;
-        grid-template-rows: auto auto;
-        grid-template-areas: "video1 . video2 . video3"
-                             "video4 . video5 . video6";
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
     div iframe{
         border-radius: 2em;
         transform: scale(1, 1);
-        transition: all 1s;
-    }
-    
-    div iframe:hover{
-        transform: scale(1.1, 1.1);
         transition: all 1s;
     }
     
@@ -2363,12 +2067,8 @@ nav ul li{
     /* HEADER */
     
     header{
-        background-color: black;
-        background-image: url("../img/perritos1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
         height: 100%;
+        margin-bottom: 0px;
     }
        
     body header p{
@@ -2575,7 +2275,6 @@ nav ul li{
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
 
     div img{
@@ -2584,7 +2283,7 @@ nav ul li{
         border-radius: 1em;
     }
     
-    div img:hover{
+    .fotos img:hover{
         transform: scale(1.1, 1.1);
         transition: all 1s;
     }
@@ -2603,16 +2302,7 @@ nav ul li{
         text-shadow: 4px 4px 4px white;    
         font-style: normal;
     }
-    
-    section article {
-        border: 3px solid whitesmoke;
-        border-radius: 1em;
-        text-align: left;
-        font-style: normal;
-        height: 140px;
-    }
-    
-    
+        
     /* MENU */
     
     .menu{
@@ -2626,7 +2316,6 @@ nav ul li{
         justify-items: center;
         align-content: center;
         justify-content: center;
-        background-image: linear-gradient(lightblue, white, lightblue);
     }
     
     nav ul li a{
