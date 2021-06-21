@@ -23,37 +23,31 @@
             <li><a class="opcionCinco" href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
-    <main>
-        <form class="formulario" action="" method="POST">
-            <div class="contenedorFormulario">
-                <fieldset>
-                    <legend>Datos Personales</legend>
-
-                    <label for="nombreUsuario">Ingrese su nombre</label>
-                    <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre">
-                    <br>
-
-                    <label for="claveUsuario">Ingrese su contraseña</label>
-                    <input type="password" id="claveUsuario">
-                    <br>
-
-                    <label for="documento">Ingrese su DNI</label>
-                    <input type="number" id="documento">
-                    <br>
-         
-                    <!-- RADIO BUTTON -->
-                    <label for="sexoUsuario">Seleccione su sexo</label>
-                    <fieldset class="sexo">            
-                        Femenino<input class="botones" type="radio" name="sexoUsuario">
-                        Masculino<input class="botones" type="radio" name="sexoUsuario">
-                    </fieldset>
-
-                    <div class="botonesFormulario">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Cancelar">
-                    </div>
-                </fieldset>
+    <main style="margin-left: 40px; width: 70%;">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Ingrese su nombre</div>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Ingrese su correo electrónico</div>
             </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Hombre</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">Mujer</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </main>
     <footer>
