@@ -93,7 +93,7 @@ div iframe{
 /* HEADER */
 
 header{
-    background-color: black;
+    background-color: $colorHeader;
     background-image: url("../img/perritos1.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@ header{
 body{
     header{
         p{
-            color: white;
+            color: $colorTitulo;
             font-size: 50px;
             text-align: center;
             font-style: normal;
@@ -123,7 +123,7 @@ footer{
 
 .footerName{
     padding-top: 2px;
-    color: white;
+    color: $colorFooter;
     font-size: 20px;
     text-align: center;
     font-style: normal;
@@ -190,7 +190,7 @@ nav ul li a{
     width: 250px;
     border-radius: 1em;
     background-image: linear-gradient(cyan, rgb(9, 161, 211) );
-    color: white;
+    color: $colorMenu;
     text-shadow: 4px 4px 4px black;
     align-items: center;
     justify-items: center;
@@ -199,7 +199,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: white;
+    color: $colorMenu;
     background-image: linear-gradient(rgb(9, 161, 211), cyan );
     text-shadow: 4px 4px 4px black;
 }
@@ -549,7 +549,7 @@ nav ul li{
     }
     
     .footerName{
-        color: white;
+        color: $colorFooter;
         font-size: 30px;
         text-align: center;
         font-style: normal;
@@ -607,7 +607,7 @@ nav ul li{
         width: 250px;
         border-radius: 1em;
         background-image: linear-gradient(cyan, rgb(9, 161, 211) );
-        color: white;
+        color: $colorMenu;
         text-shadow: 4px 4px 4px black;
         align-items: center;
         justify-items: center;
@@ -616,7 +616,7 @@ nav ul li{
     }
     
     nav ul li a:hover{
-        color: white;
+        color: $colorMenu;
         background-image: linear-gradient(rgb(9, 161, 211), cyan );
         text-shadow: 4px 4px 4px black;
     }
@@ -713,7 +713,7 @@ nav ul li{
     }
     
     .footerName{
-        color: white;
+        color: $colorFooter;
         font-size: 30px;
         text-align: center;
         font-style: normal;
@@ -771,7 +771,7 @@ nav ul li{
         width: 250px;
         border-radius: 1em;
         background-image: linear-gradient(cyan, rgb(9, 161, 211) );
-        color: white;
+        color: $colorMenu;
         text-shadow: 4px 4px 4px black;
         align-items: center;
         justify-items: center;
@@ -780,7 +780,7 @@ nav ul li{
     }
     
     nav ul li a:hover{
-        color: white;
+        color: $colorMenu;
         background-image: linear-gradient(rgb(9, 161, 211), cyan );
         text-shadow: 4px 4px 4px black;
     }
@@ -878,7 +878,7 @@ nav ul li{
     }
     
     .footerName{
-        color: white;
+        color: $colorFooter;
         font-size: 30px;
         text-align: center;
         font-style: normal;
@@ -930,7 +930,7 @@ nav ul li{
         width: 250px;
         border-radius: 1em;
         background-image: linear-gradient(cyan, rgb(9, 161, 211) );
-        color: white;
+        color: $colorMenu;
         text-shadow: 4px 4px 4px black;
         align-items: center;
         justify-items: center;
@@ -939,7 +939,7 @@ nav ul li{
     }
     
     nav ul li a:hover{
-        color: white;
+        color: $colorMenu;
         background-image: linear-gradient(rgb(9, 161, 211), cyan );
         text-shadow: 4px 4px 4px black;
     }
